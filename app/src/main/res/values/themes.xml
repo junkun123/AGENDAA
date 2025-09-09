@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for light mode. -->
+    <style name="Base.Theme.Agenda11" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Material Design 3 Color Palette -->
+        <item name="colorPrimary">#F13F51B5</item>
+        <item name="colorOnPrimary">@color/md_theme_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">#F7434EB1</item>
+        <item name="colorSecondary">@color/md_theme_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/md_theme_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/md_theme_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/md_theme_tertiary</item>
+        <item name="colorOnTertiary">@color/md_theme_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/md_theme_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/md_theme_onTertiaryContainer</item>
+        <item name="colorError">@color/md_theme_error</item>
+        <item name="colorOnError">@color/md_theme_onError</item>
+        <item name="colorErrorContainer">@color/md_theme_errorContainer</item>
+        <item name="colorOnErrorContainer">@color/md_theme_onErrorContainer</item>
+
+        <item name="android:colorBackground">@color/md_theme_background</item>
+        <item name="colorOnBackground">@color/md_theme_onBackground</item>
+        <item name="colorSurface">@color/md_theme_surface</item>
+        <item name="colorOnSurface">@color/md_theme_onSurface</item>
+        <item name="colorSurfaceVariant">@color/md_theme_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_onSurfaceVariant</item>
+        <item name="colorOutline">@color/md_theme_outline</item>
+
+        <!-- Status bar color for light theme -->
+        <item name="android:statusBarColor">#CC3F51B5</item>
+        <!-- For light status bar icons (needed if statusBarColor is light) -->
+        <!-- <item name="android:windowLightStatusBar" tools:targetApi="m">true</item> -->
+    </style>
+
+    <style name="Theme.Agenda11" parent="Base.Theme.Agenda11" />
+
+    <!-- Estilos para los botones de la Calculadora -->
+    <style name="Widget.App.Button.Calculator" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_gravity">fill</item>
+        <item name="android:insetTop">4dp</item>
+        <item name="android:insetBottom">4dp</item>
+        <item name="android:insetLeft">4dp</item>
+        <item name="android:insetRight">4dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Widget.App.Button.Calculator.Operator" parent="Widget.App.Button.Calculator">
+        <!-- Puedes añadir aquí colores diferentes para los botones de operadores si quieres -->
+        <!-- item name="backgroundTint">@color/tu_color_operador</item -->
+        <!-- item name="android:textColor">@color/tu_color_texto_operador</item -->
+    </style>
+
+</resources>

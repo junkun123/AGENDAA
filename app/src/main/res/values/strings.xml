@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">AppBox</string>
+    <string name="agenda_icon_description">Icono de la agenda</string>
+    <string name="hint_usuario">Usuario</string>
+    <string name="hint_contrasena">Contraseña</string>
+    <string name="boton_ingresar">Ingresar</string>
+    <string name="boton_registrar">Registrar</string>
+    <string name="login_error">Usuario o contraseña incorrectos</string>
+    <string name="login_error_campos_vacios_login">Ingresa usuario y contraseña</string>
+    <string name="registro_no_implementado">La función de registro aún no está implementada</string>
+    <string name="titulo_registro">Crear Nueva Cuenta</string>
+    <string name="hint_nuevo_usuario">Nuevo nombre de usuario</string>
+    <string name="hint_nueva_contrasena">Nueva contraseña</string>
+    <string name="boton_confirmar_registro">Confirmar Registro</string>
+    <string name="registro_exitoso">Usuario registrado exitosamente</string>
+    <string name="registro_error_campos_vacios">Por favor, completa todos los campos</string>
+    <string name="registro_error_usuario_existe">Este nombre de usuario ya existe</string>
+    <string name="app_logo_description">Logo de la aplicación</string>
+
+    <!-- Strings para la Calculadora -->
+    <string name="titulo_calculadora">Calculadora</string>
+    <string name="boton_abrir_calculadora">Abrir Calculadora</string>
+
+    <!-- Labels para el cajón de aplicaciones -->
+    <string name="label_agenda">Agenda</string>
+    <string name="label_calculadora">Calculadora</string>
+    <string name="label_especialidades">Especialidades</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".CalculadoraActivity">
+
+    <TextView
+        android:id="@+id/textViewResultadoCalculadora"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@android:drawable/editbox_background"
+        android:gravity="end"
+        android:padding="16dp"
+        android:text="0"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayoutBotones"/>
+
+    <GridLayout
+        android:id="@+id/gridLayoutBotones"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:columnCount="4"
+        android:rowCount="5"
+        app:layout_constraintDimensionRatio="1:1.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResultadoCalculadora">
+
+        <!-- Fila 1 -->
+        <Button android:id="@+id/buttonLimpiar" style="@style/Widget.App.Button.Calculator" android:text="C" android:layout_columnSpan="2" android:layout_gravity="fill_horizontal"/>
+        <Button android:id="@+id/buttonBorrar" style="@style/Widget.App.Button.Calculator" android:text="DEL"/>
+        <Button android:id="@+id/buttonDividir" style="@style/Widget.App.Button.Calculator.Operator" android:text="/"/>
+
+        <!-- Fila 2 -->
+        <Button android:id="@+id/button7" style="@style/Widget.App.Button.Calculator" android:text="7"/>
+        <Button android:id="@+id/button8" style="@style/Widget.App.Button.Calculator" android:text="8"/>
+        <Button android:id="@+id/button9" style="@style/Widget.App.Button.Calculator" android:text="9"/>
+        <Button android:id="@+id/buttonMultiplicar" style="@style/Widget.App.Button.Calculator.Operator" android:text="*"/>
+
+        <!-- Fila 3 -->
+        <Button android:id="@+id/button4" style="@style/Widget.App.Button.Calculator" android:text="4"/>
+        <Button android:id="@+id/button5" style="@style/Widget.App.Button.Calculator" android:text="5"/>
+        <Button android:id="@+id/button6" style="@style/Widget.App.Button.Calculator" android:text="6"/>
+        <Button android:id="@+id/buttonRestar" style="@style/Widget.App.Button.Calculator.Operator" android:text="-"/>
+
+        <!-- Fila 4 -->
+        <Button android:id="@+id/button1" style="@style/Widget.App.Button.Calculator" android:text="1"/>
+        <Button android:id="@+id/button2" style="@style/Widget.App.Button.Calculator" android:text="2"/>
+        <Button android:id="@+id/button3" style="@style/Widget.App.Button.Calculator" android:text="3"/>
+        <Button android:id="@+id/buttonSumar" style="@style/Widget.App.Button.Calculator.Operator" android:text="+"/>
+
+        <!-- Fila 5 -->
+        <Button android:id="@+id/button0" style="@style/Widget.App.Button.Calculator" android:text="0" android:layout_columnSpan="2" android:layout_gravity="fill_horizontal"/>
+        <Button android:id="@+id/buttonPunto" style="@style/Widget.App.Button.Calculator" android:text="."/>
+        <Button android:id="@+id/buttonIgual" style="@style/Widget.App.Button.Calculator.Operator" android:text="="/>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

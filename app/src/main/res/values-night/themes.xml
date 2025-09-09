@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for dark mode. -->
+    <style name="Base.Theme.Agenda11" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Material Design 3 Color Palette -->
+        <!-- Primary, Secondary, Tertiary, Error colors are reused. -->
+        <!-- Background and Surface colors will be inherited from the dark Material3 parent -->
+        <!-- unless explicitly overridden with dark-specific versions. -->
+        <item name="colorPrimary">@color/md_theme_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/md_theme_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/md_theme_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/md_theme_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/md_theme_tertiary</item>
+        <item name="colorOnTertiary">@color/md_theme_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/md_theme_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/md_theme_onTertiaryContainer</item>
+        <item name="colorError">@color/md_theme_error</item>
+        <item name="colorOnError">@color/md_theme_onError</item>
+        <item name="colorErrorContainer">@color/md_theme_errorContainer</item>
+        <item name="colorOnErrorContainer">@color/md_theme_onErrorContainer</item>
+
+        <!-- For dark theme, Surface and Background are typically dark. -->
+        <!-- We let the parent Theme.Material3.DayNight handle these to get appropriate dark defaults. -->
+        <!-- If you had specific dark surface/background colors (e.g., @color/md_theme_dark_surface), -->
+        <!-- you would set them here. -->
+
+        <item name="colorOutline">@color/md_theme_outline</item>
+
+        <!-- Status bar color for dark theme -->
+        <!-- ?attr/colorSurface will typically be a dark color in dark theme -->
+        <item name="android:statusBarColor">?attr/colorSurface</item>
+        <!-- For dark status bar icons (needed if statusBarColor is dark) - default for dark themes -->
+        <!-- <item name="android:windowLightStatusBar" tools:targetApi="m">false</item> -->
+    </style>
+
+    <!-- If Theme.Agenda11 is not defined here, it will inherit from Base.Theme.Agenda11 (night) -->
+    <!-- You can add <style name="Theme.Agenda11" parent="Base.Theme.Agenda11" /> if you want to be explicit -->
+    <!-- or if you plan to add more specific overrides to Theme.Agenda11 for dark mode later. -->
+
+</resources>
